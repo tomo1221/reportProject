@@ -13,9 +13,12 @@ Route::get('/', function () {
 //})->name('home');
 
 // /companyに対してgetで通信が来た場合、CompanyControllerクラスのindexメソッドにルーティングする
-//Route::get('company', [CompanyController::class, 'index']);
-//Route::get('/company', ['App\Http\Controllers\CompanyController@index']);
 Route::get('/company', [\App\Http\Controllers\CompanyController::class, 'index']);
+
+Route::post('/company', [\App\Http\Controllers\CompanyController::class, 'createCompanyData']);
+
+
+Route::get('/add', [\App\Http\Controllers\CompanyController::class, 'noTask']);
 
 
 
