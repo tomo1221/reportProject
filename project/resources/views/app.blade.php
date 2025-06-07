@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<!-- プロジェクト作成時自動作成のためコメントアウト
         {{-- Inline script to detect system dark mode preference and apply it immediately --}}
         <script>
             (function() {
@@ -45,5 +45,9 @@
     </head>
     <body class="font-sans antialiased">
         @inertia
+-->
+    <body>
+        <ul> テスト
+        </ul>
     </body>
 </html>
