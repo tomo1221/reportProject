@@ -6,13 +6,15 @@
     </head>
     <body>
         <main>
-            <h1>会社名一覧</h1>
-            <ul>
-                @foreach ($company as $comp)
-                <li>{{$comp -> companyName}}
-                </li>
-                @endforeach
-            </ul>
+            <h1>会社登録画面</h1>
+            <!-- フォームエリア -->
+            <form action="/company" method="POST">
+            会社名:<br>
+            <input name="companyName">
+            <br>
+            {{ csrf_field() }}
+            <button class="btn btn-success"> 登録 </button>
+</form>
         </main>
     </body>
 </html>
